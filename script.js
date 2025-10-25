@@ -10,7 +10,7 @@
 	position: fixed;
 	width: min(600px, 80vw);
 	left: calc(50vw - min(300px, 40vw));
-	top: -2px;
+	top: 8px;
 }
 [id="/for_kids/interactives"], [id="/for_kids/show"],
 #side_bar, .VideoLayout__aside,

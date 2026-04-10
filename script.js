@@ -14,10 +14,10 @@
 	top: 8px;
 }
 [id="/for_kids/interactives"], [id="/for_kids/show"],
-#side_bar, .VideoLayout__aside,
+#side_bar, .VideoLayout__aside, [data-testid=video_left_menu],
 .PortalNavigation, #top_video_actions_layer_place, .HeaderNav__item--acts,
 [class*=VideoHeaderLayout__container]>:is(:first-child,:last-child) button,
-[class*=InternalTwoColumnLayoutColumn] section>section,
+#video_recommendations, [class*=InternalTwoColumnLayoutColumn]+[class*=InternalTwoColumnLayoutColumn] section:not(:has([class*=laylist])),
 [class*=InternalTwoColumnLayoutColumn]+[class*=InternalTwoColumnLayoutColumn]:not(:has([class*=laylist])){
 	display: none;
 }`.replaceAll(';','!important;');
